@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const TopNavBar = () => {
 	const [openNav, setOpenNav] = useState(false);
-	console.log(openNav);
+	// to control the state of the navigation.
 	return (
 		<>
 			<nav className='bg-green-600 p-4 flex'>
@@ -15,6 +15,7 @@ const TopNavBar = () => {
 				/>
 			</nav>
 			<SideNavBar openNav={openNav} setOpenNav={setOpenNav} />
+			{/* Side Nav bar component, that accepts prop states to determine whether the component shows or not. */}
 		</>
 	);
 };
