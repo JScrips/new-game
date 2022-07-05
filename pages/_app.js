@@ -5,10 +5,7 @@ function MyApp({ Component, pageProps }) {
 	return (
 		<div className='min-h-screen'>
 			<TopNavBar />
-			<div className='flex min-h-screen'>
-				<SideNavBar />
-				<Component {...pageProps} />
-			</div>
+			<Component {...pageProps} />
 		</div>
 	);
 }
