@@ -35,16 +35,22 @@ const SideNavBar = ({ setOpenNav }) => {
 							<a>Home</a>
 						</Link>
 					</li>
-					<li onClick={() => setOpenNav((prev) => !prev)}>
-						<Link href='/Shops'>
-							<a>Shops</a>
-						</Link>
-					</li>
+
 					<Link href='/Story'>
 						<a className='text-lg' onClick={() => setOpenNav((prev) => !prev)}>
 							Story
 						</a>
 					</Link>
+					<li onClick={() => setOpenNav((prev) => !prev)}>
+						<Link href='/Shops'>
+							<a className='text-lg'>Shops</a>
+						</Link>
+					</li>
+					<li onClick={() => setOpenNav((prev) => !prev)}>
+						<Link href='/Barracks'>
+							<a className='text-lg'>Barracks</a>
+						</Link>
+					</li>
 					<Link href='/ElementalMines'>
 						<a className='text-lg' onClick={() => setOpenNav((prev) => !prev)}>
 							Elemental Mines
